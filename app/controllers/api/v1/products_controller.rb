@@ -1,9 +1,5 @@
-module Api
-  module V1
-    class ProductsController < ApplicationController
-      def index
-        @products = Product.all
-      end
-    end
+class Api::V1::ProductsController < ApplicationController
+  def index
+    @products = Product.all
   end
 end
